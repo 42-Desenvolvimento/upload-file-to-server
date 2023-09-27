@@ -45,11 +45,11 @@ Nenhum problema conhecido no momento.
 
 ## Suporte
 
-Se você encontrar problemas ou tiver sugestões de melhoria, por favor, [abra um problema](https://github.com/MarioCMesquita/Upload_File_To_Server/issues) no repositório da extensão no GitHub.
+Se você encontrar problemas ou tiver sugestões de melhoria, por favor, [abra um problema](https://github.com/42-Desenvolvimento/upload-file-to-server/issues) no repositório da extensão no GitHub.
 
 ## Contribuição
 
-Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas no [repositório da extensão](https://github.com/MarioCMesquita/Upload_File_To_Server).
+Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas no [repositório da extensão](https://github.com/42-Desenvolvimento/upload-file-to-server).
 
 ## Licença
 
