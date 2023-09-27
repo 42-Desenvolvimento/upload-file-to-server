@@ -7,3 +7,5 @@ out
 yarn.lock
 package-lock.json
 pnpm-lock.yaml
+
+upload-file-to-server-0.0.4.vsix
