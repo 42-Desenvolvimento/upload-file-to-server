@@ -1,0 +1,75 @@
+{
+  "name": "upload-file-to-server",
+  "displayName": "Copiar comando de upload para o Servidor",
+  "description": "Uma extensão para o Visual Studio Code que permite copiar comando de upload de arquivos para um servidor.",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": ["Other"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "upload-file-to-server.sendFileToServer",
+        "title": "Copiar comando de upload"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "upload-file-to-server.sendFileToServer",
+          "group": "navigation"
+        }
+      ],
+      "scm/resourceState/context": [
+        {
+          "command": "upload-file-to-server.sendFileToServer",
+          "group": "navigation"
+        }
+      ],
+      "git/resourceState/context": [
+        {
+          "command": "upload-file-to-server.sendFileToServer",
+          "group": "navigation"
+        }
+      ]
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Extensão: Copiar comando de upload para o Servidor",
+      "properties": {
+        "uploadToServer.serverHost": {
+          "type": "string",
+          "default": "",
+          "description": "Host ou endereço IP."
+        },
+        "uploadToServer.serverUsername": {
+          "type": "string",
+          "default": "",
+          "description": "Nome de usuário."
+        },
+        "uploadToServer.serverPath": {
+          "type": "string",
+          "default": "",
+          "description": "Caminho para onde os arquivos serão enviados."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.82.0",
+    "@types/node": "16.x",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6"
+  }
+}
